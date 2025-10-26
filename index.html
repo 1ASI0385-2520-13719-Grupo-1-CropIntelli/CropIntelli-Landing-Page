@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CropCodex — IA para tus plantas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__brand" aria-label="CropCodex">
+        <img src="./assets/Logo.png" alt="CropCodex" class="brand__logo">
+        <span class="brand__name">CropCodex</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span>
+      </button>
+
+      <div class="nav__right">
+        <ul class="nav__menu" data-menu>
+          <li><a href="#hero"      class="nav__link" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="#offers"    class="nav__link" data-i18n="nav.benefits">Beneficio</a></li>
+          <li><a href="#how"       class="nav__link" data-i18n="nav.how">Funcionamiento</a></li>
+          <li><a href="#plans"     class="nav__link" data-i18n="nav.plans">Planes</a></li>
+          <li><a href="#team"      class="nav__link" data-i18n="nav.team">Equipo</a></li>
+          <li><a href="#contacto"  class="nav__link" data-i18n="nav.contact">Contacto</a></li>
+          <li><a href="#meetings"  class="nav__link" data-i18n="nav.meetings">Reuniones</a></li>
+        </ul>
+
+        <!-- Switch EN/ES -->
+        <div class="lang" role="group" aria-label="Language">
+          <span class="lang__label">EN</span>
+          <button id="langSwitch" class="switch" aria-pressed="true" aria-label="Cambiar idioma">
+            <span class="switch__knob"></span>
+          </button>
+          <span class="lang__label lang__label--active">ES</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="section hero hero--center">
+      <div class="container">
+        <h1 class="hero__title" data-i18n="hero.title">Tu doctor de plantas en tu bolsillo</h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Diagnostica al instante los problemas de tus plantas.</p>
+        <p class="hero__desc" data-i18n="hero.desc">
+          CropCodex ofrece a agricultores y jardineros peruanos soluciones basadas en IA para cosechas más sanas y abundantes.
+        </p>
+        <div class="hero__cta">
+          <a href="#how" class="btn btn--primary btn--lg" data-i18n="hero.cta">Comience a diagnosticar ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LO QUE OFRECEMOS ================= -->
+    <section id="offers" class="section offers">
+      <div class="container">
+        <h2 class="offers__title" data-i18n="offers.title">Lo que ofrecemos</h2>
+        <div class="offers__panel">
+          <div class="offers__grid">
+            <article class="offer-card">
+              <div class="offer-card__icon" aria-hidden="true">📷</div>
+              <h3 class="offer-card__title" data-i18n="offers.card1.title">Diagnóstico instantáneo</h3>
+              <p class="offer-card__text" data-i18n="offers.card1.text">Obtén respuestas rápidas con una sola foto.</p>
+            </article>
+            <article class="offer-card">
+              <div class="offer-card__icon" aria-hidden="true">🧪</div>
+              <h3 class="offer-card__title" data-i18n="offers.card2.title">Resultados precisos</h3>
+              <p class="offer-card__text" data-i18n="offers.card2.text">IA entrenada con expertos locales.</p>
+            </article>
+            <article class="offer-card offers__center">
+              <div class="offer-card__icon" aria-hidden="true">🌿</div>
+              <h3 class="offer-card__title" data-i18n="offers.card3.title">Orientación clara</h3>
+              <p class="offer-card__text" data-i18n="offers.card3.text">Pasos sencillos para recuperar la salud de tus plantas.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CÓMO FUNCIONA ================= -->
+    <section id="how" class="section how">
+      <div class="container">
+        <h2 class="how__title" data-i18n="how.title">Tres sencillos pasos para tener plantas más sanas</h2>
+        <div class="how__layout">
+          <!-- Izquierda: pasos + imágenes sin fondo -->
+          <div class="how__left">
+            <div class="how__steps">
+              <div class="step">
+                <span class="step__num" aria-hidden="true">1</span>
+                <div>
+                  <h3 class="step__title" data-i18n="how.step1.title">Tomar una foto</h3>
+                  <p class="step__text" data-i18n="how.step1.text">Utilice su teléfono inteligente para capturar una imagen clara de la hoja o el área de la planta afectada.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__num" aria-hidden="true">2</span>
+                <div>
+                  <h3 class="step__title" data-i18n="how.step2.title">Obtenga análisis instantáneo</h3>
+                  <p class="step__text" data-i18n="how.step2.text">Nuestra IA analiza la imagen y proporciona un diagnóstico detallado y probabilidad de éxito en segundos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="how__thumbs">
+              <figure class="thumb">
+                <img src="./assets/phone-leaf.jpg" alt="Foto de hoja">
+              </figure>
+              <figure class="thumb">
+                <img src="./assets/phone-chart.jpg" alt="Gráfico IA">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Derecha: imagen grande + paso 3 debajo -->
+          <aside class="how__panel">
+            <div class="how__panel-media">
+              <img src="./assets/phone-main.jpg" alt="Pantalla de diagnóstico">
+            </div>
+            <div class="how__panel-step">
+              <div class="how__panel-step-head">
+                <span class="step__num" aria-hidden="true">3</span>
+                <h3 class="step__title" data-i18n="how.step3.title">Siga pasos claros</h3>
+              </div>
+              <p class="step__text" data-i18n="how.step3.text">Reciba recomendaciones sencillas y prácticas para tratar el problema y proteger su cosecha.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PLANES ================= -->
+    <section id="plans" class="section plans">
+      <div class="container">
+        <h2 class="plans__title" data-i18n="plans.title">Estos son nuestros planes</h2>
+        <div class="plans__panel">
+          <div class="plans__grid">
+            <!-- Gratis -->
+            <article class="plan-card">
+              <h3 class="plan-card__name" data-i18n="plans.free.name">GRATIS</h3>
+              <h4 class="plan-card__subtitle" data-i18n="plans.free.includes">Lo que incluye</h4>
+              <ul class="plan-card__list">
+                <li data-i18n="plans.free.li1">Número 1</li>
+                <li data-i18n="plans.free.li2">Acceso limitado a funcionalidades</li>
+                <li data-i18n="plans.free.li3">Número 2</li>
+                <li data-i18n="plans.free.li4">Registro de 1 proyecto personal</li>
+                <li data-i18n="plans.free.li5">Número 3</li>
+                <li data-i18n="plans.free.li6">Panel de control básico</li>
+                <li data-i18n="plans.free.li7">Número 4</li>
+                <li data-i18n="plans.free.li8">Recordatorios por correo electrónico</li>
+              </ul>
+              <a href="#contacto" class="btn btn--dark plan-card__cta" data-i18n="plans.free.cta">COMIENZA $0</a>
+            </article>
+
+            <!-- Básico -->
+            <article class="plan-card">
+              <h3 class="plan-card__name" data-i18n="plans.basic.name">BÁSICO</h3>
+              <h4 class="plan-card__subtitle" data-i18n="plans.basic.includes">Lo que incluye</h4>
+              <ul class="plan-card__list">
+                <li data-i18n="plans.basic.li1">Número 1</li>
+                <li data-i18n="plans.basic.li2">Todo en el plan Gratis</li>
+                <li data-i18n="plans.basic.li3">Número 2</li>
+                <li data-i18n="plans.basic.li4">Hasta 5 proyectos simultáneos</li>
+                <li data-i18n="plans.basic.li5">Número 3</li>
+                <li data-i18n="plans.basic.li6">Estadísticas básicas y reportes</li>
+                <li data-i18n="plans.basic.li7">Número 4</li>
+                <li data-i18n="plans.basic.li8">Acceso a actualizaciones básicas</li>
+              </ul>
+              <a href="#contacto" class="btn btn--dark plan-card__cta" data-i18n="plans.basic.cta">COMIENZA $5</a>
+            </article>
+
+            <!-- Premium -->
+            <article class="plan-card">
+              <h3 class="plan-card__name" data-i18n="plans.premium.name">PREMIUM</h3>
+              <h4 class="plan-card__subtitle" data-i18n="plans.premium.includes">Lo que incluye</h4>
+              <ul class="plan-card__list">
+                <li data-i18n="plans.premium.li1">Número 1</li>
+                <li data-i18n="plans.premium.li2">Todo en el plan Básico</li>
+                <li data-i18n="plans.premium.li3">Número 2</li>
+                <li data-i18n="plans.premium.li4">Proyectos ilimitados</li>
+                <li data-i18n="plans.premium.li5">Número 3</li>
+                <li data-i18n="plans.premium.li6">Estadísticas en tiempo real</li>
+                <li data-i18n="plans.premium.li7">Número 4</li>
+                <li data-i18n="plans.premium.li8">Soporte 24/7 personalizado</li>
+              </ul>
+              <a href="#contacto" class="btn btn--dark plan-card__cta" data-i18n="plans.premium.cta">COMIENZA $10</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EQUIPO ================= -->
+    <section id="team" class="section team">
+      <div class="container">
+        <h2 class="team__title" data-i18n="team.title">Nuestro Equipo</h2>
+        <div class="team__grid">
+          <article class="member">
+            <img class="member__avatar" src="./assets/team/renzo-l.jpg" alt="Llerena Delgado, Renzo Miguel">
+            <div class="member__body">
+              <h3 class="member__name">Llerena Delgado, Renzo Miguel</h3>
+              <p class="member__role" data-i18n="team.renzoL.role">(Product Owner)</p>
+              <p class="member__bio" data-i18n="team.renzoL.bio">Responsable y orientado a la calidad en todos mis proyectos.</p>
+            </div>
+          </article>
+
+          <article class="member">
+            <img class="member__avatar" src="./assets/team/piero-e.jpg" alt="Espada Lazo Piero Anthony">
+            <div class="member__body">
+              <h3 class="member__name">Espada Lazo Piero Anthony</h3>
+              <p class="member__role" data-i18n="team.pieroE.role">(Scrum Developer)</p>
+              <p class="member__bio" data-i18n="team.pieroE.bio">Estudiante de Ingeniería de Software. Habilidades en C++ y Python.</p>
+            </div>
+          </article>
+
+          <article class="member member--center">
+            <img class="member__avatar" src="./assets/team/rafael-d.jpg" alt="Díaz Herrera Rafael Sebastian">
+            <div class="member__body">
+              <h3 class="member__name">Díaz Herrera Rafael Sebastian</h3>
+              <p class="member__role" data-i18n="team.rafaelD.role">(Scrum Master)</p>
+              <p class="member__bio" data-i18n="team.rafaelD.bio">Habilidades blandas sólidas y foco en ejecución.</p>
+            </div>
+          </article>
+
+          <article class="member">
+            <img class="member__avatar" src="./assets/team/renzo-v.jpg" alt="Villafuerte Tapia, Renzo Alonso">
+            <div class="member__body">
+              <h3 class="member__name">Villafuerte Tapia, Renzo Alonso</h3>
+              <p class="member__role" data-i18n="team.renzoV.role">(Scrum Developer)</p>
+              <p class="member__bio" data-i18n="team.renzoV.bio">C++, estructuras de datos y POO.</p>
+            </div>
+          </article>
+
+          <article class="member">
+            <img class="member__avatar" src="./assets/team/micaela-a.jpg" alt="Aguirre Salazar Micaela Sol">
+            <div class="member__body">
+              <h3 class="member__name">Aguirre Salazar Micaela Sol</h3>
+              <p class="member__role" data-i18n="team.micaelaA.role">(Scrum Developer)</p>
+              <p class="member__bio" data-i18n="team.micaelaA.bio">Gestión de proyectos, análisis y documentación técnica.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="contact__title" data-i18n="contact.title">Contáctanos</h2>
+
+        <div class="contact__panel">
+          <form class="contact__form" action="#" method="post" autocomplete="on">
+            <h3 class="contact__legend" data-i18n="contact.legend">Información</h3>
+
+            <label class="field">
+              <span class="field__label" data-i18n="contact.email.label">Correo</span>
+              <input class="field__input"
+                     type="email"
+                     data-i18n="contact.email"
+                     data-i18n-attrs="placeholder,aria-label"
+                     placeholder="tucorreo@ejemplo.com"
+                     aria-label="Correo"
+                     required>
+            </label>
+
+            <label class="field">
+              <span class="field__label" data-i18n="contact.phone.label">Teléfono</span>
+              <input class="field__input"
+                     type="tel"
+                     data-i18n="contact.phone"
+                     data-i18n-attrs="placeholder,aria-label"
+                     placeholder="+51 999 999 999"
+                     aria-label="Teléfono">
+            </label>
+
+            <label class="field">
+              <span class="field__label" data-i18n="contact.name.label">Nombres</span>
+              <input class="field__input"
+                     type="text"
+                     data-i18n="contact.name"
+                     data-i18n-attrs="placeholder,aria-label"
+                     placeholder="Tu nombre completo"
+                     aria-label="Nombres">
+            </label>
+
+            <label class="field field--textarea">
+              <span class="field__label" data-i18n="contact.message.label">Comentario</span>
+              <textarea class="field__input"
+                        rows="5"
+                        data-i18n="contact.message"
+                        data-i18n-attrs="placeholder,aria-label"
+                        placeholder="Escribe tu consulta aquí..."
+                        aria-label="Comentario"></textarea>
+            </label>
+
+            <button class="btn btn--dark contact__submit" type="submit" data-i18n="contact.send">Enviar</button>
+          </form>
+
+          <aside class="contact__aside">
+            <h4 class="contact__aside-title" data-i18n="contact.asideTitle">Realízanos cualquier tipo de consulta</h4>
+            <img class="contact__image"
+                 src="./assets/contact/contact-us.png"
+                 data-i18n="contact.image"
+                 data-i18n-attrs="alt"
+                 alt="Ilustración de contacto">
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REUNIONES ================= -->
+    <section id="meetings" class="section meetings">
+      <div class="container">
+        <h2 class="meetings__title" data-i18n="meetings.title">Nuestras Reuniones</h2>
+        <div class="meetings__frame">
+          <img src="./assets/meetings/screenshot.png"
+               data-i18n="meetings.image"
+               data-i18n-attrs="alt"
+               alt="Captura de una reunión del equipo">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer footer-extended">
+    <div class="container footer-extended__inner">
+      <div class="footer-social">
+        <h4 class="footer-social__title" data-i18n="footer.social.title">Nuestras redes sociales</h4>
+        <div class="footer-social__icons">
+          <a aria-label="Facebook" href="#" class="social social--fb" title="Facebook">f</a>
+          <a aria-label="TikTok"   href="#" class="social social--tt" title="TikTok">t</a>
+        </div>
+        <p class="footer-copy" data-i18n="footer.copy">©2025 CropCodex. All rights reserved</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Enlaces de pie">
+        <a href="#" data-i18n="footer.link.privacy">Políticas de Privacidad</a>
+        <a href="#" data-i18n="footer.link.liability">Limitaciones de Responsabilidad</a>
+        <a href="#" data-i18n="footer.link.terms">Términos y Servicios</a>
+        <a href="#" data-i18n="footer.link.about">Acerca de Nosotros</a>
+        <a href="#contacto" data-i18n="footer.link.contact">Contacto</a>
+        <a href="#" data-i18n="footer.link.stats">Estadísticas</a>
+        <small class="footer-edit" data-i18n="footer.edited">Esta página se editó por última vez el 4 oct 2025 a las 06:13.</small>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
