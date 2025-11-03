@@ -1,6 +1,3 @@
-/* =============================
-   NAV móvil
-   ============================= */
 const toggleBtn = document.querySelector('.nav__toggle');
 const menu = document.querySelector('[data-menu]');
 if (toggleBtn && menu){
@@ -211,13 +208,6 @@ const I18N = {
   }
 };
 
-/* ————— motor de traducción —————
-   Soporta:
-   - data-i18n            -> textContent
-   - data-i18n-html       -> innerHTML
-   - data-i18n-attrs="placeholder,aria-label,title,value"
-     usa la clave base + sufijo, p.ej. key.placeholder
-*/
 const langSwitch = document.getElementById('langSwitch');
 const langLabels = document.querySelectorAll('.lang__label'); // [EN, ES]
 
